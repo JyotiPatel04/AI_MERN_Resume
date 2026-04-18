@@ -9,11 +9,12 @@ require('./conn');
 
 app.use(express.json());
 app.use(cors({
-    credentials: true,
-    origin: [
-        "http://localhost:5173",
-        "http://localhost:4000"
-    ]
+  credentials: true,
+  origin: [
+    "http://localhost:5173",
+    "http://localhost:4000",
+    "https://ai-mern-resume.vercel.app"
+  ]
 }));
 
 const UserRoute = require('./Routes/user');
